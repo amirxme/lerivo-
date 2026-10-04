@@ -13,12 +13,20 @@ const metadata = {
 
 const solanaWeb3JsAdapter = new SolanaAdapter();
 
-export const modal = createAppKit({
-  adapters: [solanaWeb3JsAdapter],
-  networks: [solana, solanaTestnet, solanaDevnet],
-  metadata,
-  projectId,
-  features: {
-    analytics: true,
-  },
-});
+let appKitInitialized = false;
+
+export function getAppKit() {
+  if (!appKitInitialized) {
+    createAppKit({
+      adapters: [solanaWeb3JsAdapter],
+      networks: [solana, solanaTestnet, solanaDevnet],
+      metadata,
+      projectId,
+      features: {
+        analytics: true,
+      },
+    });
+    appKitInitialized = true;
+  }
+  return true;
+}
