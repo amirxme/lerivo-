@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AppWalletProvider } from "@/components/AppWalletProvider";
+import "@/config";
 
 export const metadata: Metadata = {
   title: "LERIVO — Where memecoins meet creators",
@@ -15,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <AppWalletProvider>{children}</AppWalletProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
