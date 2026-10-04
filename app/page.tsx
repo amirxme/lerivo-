@@ -1,3 +1,7 @@
+"use client";
+
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-bg text-white">
@@ -10,12 +14,7 @@ export default function Home() {
             <a href="/creators" className="hover:text-white transition">Creators</a>
             <a href="/docs" className="hover:text-white transition">Docs</a>
           </nav>
-          <a
-            href="/create"
-            className="text-sm font-medium px-4 py-2 rounded-lg bg-white text-black hover:bg-neutral-200 transition"
-          >
-            Launch app
-          </a>
+          <WalletMultiButton />
         </div>
       </header>
 
@@ -29,7 +28,7 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface text-xs text-muted mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            Live on Base
+            Live on Solana
           </div>
 
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
@@ -66,7 +65,7 @@ export default function Home() {
           {[
             {
               title: "For memecoins",
-              text: "Turn attention into content. Launch a campaign in 2 minutes, fund it in USDC.",
+              text: "Turn attention into content. Launch a campaign in 2 minutes, fund it in SOL or USDC.",
             },
             {
               title: "For creators",
@@ -74,7 +73,7 @@ export default function Home() {
             },
             {
               title: "On-chain rewards",
-              text: "Winners are paid directly to their wallet. Transparent and instant.",
+              text: "Winners are paid directly to their Solana wallet. Transparent and instant.",
             },
           ].map((f) => (
             <div
