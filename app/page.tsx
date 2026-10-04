@@ -1,6 +1,5 @@
 "use client";
 
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
             <a href="/creators" className="hover:text-white transition">Creators</a>
             <a href="/docs" className="hover:text-white transition">Docs</a>
           </nav>
-          <WalletMultiButton />
+          <appkit-button />
         </div>
       </header>
 
