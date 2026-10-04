@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LERIVO — Web3 creator campaigns",
+  title: "LERIVO — Where memecoins meet creators",
   description:
-    "Платформа, где мемкоины платят креаторам за контент и внимание.",
+    "The Web3 platform where memecoins pay creators for memes, videos, threads and design.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
