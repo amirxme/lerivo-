@@ -23,7 +23,7 @@ export default function Home() {
       <main className="relative pt-40 pb-24 px-5">
         {/* glow */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[800px] h-[500px] bg-accent/20 blur-[140px] rounded-full" />
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[800px] h-[500px] bg-accent/10 rounded-full" />
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center">
